@@ -11,14 +11,14 @@ use Sly\RPIManager\IO\RadioGPIO\Collection\PointsCollection;
  * Let's try with an SSH connection.
  *
  * Some SSH parameters can be defined:
- * - ip (RPi IP or host)
+ * - host
  * - port
  * - username
  *
  * Authentication has to be make from allowed SSH keys.
  */
 $client = new Client(array(
-    'ip'   => '192.168.1.100',
+    'host' => '192.168.1.100',
     'port' => '2222'
 ));
 

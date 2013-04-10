@@ -11,6 +11,8 @@ interface ClientInterface
 {
     /**
      * Execute.
+     *
+     * @param string $command Command
      * 
      * @return string
      */

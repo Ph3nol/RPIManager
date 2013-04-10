@@ -40,7 +40,7 @@ class Pin
     /**
      * __toString.
      *
-     * @return string
+     * @return string|integer
      */
     public function __construct()
     {

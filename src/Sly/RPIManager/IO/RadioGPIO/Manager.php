@@ -4,7 +4,6 @@ namespace Sly\RPIManager\IO\RadioGPIO;
 
 use Sly\RPIManager\Client\ClientInterface;
 use Sly\RPIManager\IO\RadioGPIO\Collection\PointsCollection;
-use Sly\RPIManager\IO\RadioGPIO\Model\Point;
 
 /**
  * Manager.

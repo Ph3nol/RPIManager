@@ -22,21 +22,20 @@ class Client implements ClientInterface
 
     /**
      * Constructor.
-     * 
-     * @param string $command          Command
-     * @param array  $serverParameters SSH server parameters
+     *
+     * @param array $serverParameters SSH server parameters
      */
     public function __construct(array $serverParameters = array())
     {
         $resolver = new OptionsResolver();
         $resolver->setDefaults(array(
-            'ip'       => '127.0.0.1',
+            'host'     => '127.0.0.1',
             'port'     => '22',
             'username' => 'pi',
         ));
 
         if (is_string($serverParameters)) {
-            $this->serverParameters = $resolver->resolve(array('ip' => $serverParameters));
+            $this->serverParameters = $resolver->resolve(array('host' => $serverParameters));
         }
 
         if (is_array($serverParameters)) {
@@ -55,7 +54,7 @@ class Client implements ClientInterface
             $command = sprintf(
                 'ssh %s@%s -p %d \'%s\'',
                 $this->serverParameters['username'],
-                $this->serverParameters['ip'],
+                $this->serverParameters['host'],
                 $this->serverParameters['port'],
                 $command
             );
