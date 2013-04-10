@@ -2,6 +2,8 @@
 
 Some Raspberry Pi tests with this personal experimental PHP library. Still in progress.
 
+[![Build Status](https://secure.travis-ci.org/Ph3nol/RPIManager.png)](http://travis-ci.org/Ph3nol/RPIManager)
+
 ## Covering
 
 * GPIO pins management
