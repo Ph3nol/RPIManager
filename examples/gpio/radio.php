@@ -18,8 +18,7 @@ use Sly\RPIManager\IO\RadioGPIO\Collection\PointsCollection;
  * Authentication has to be made from allowed SSH keys.
  */
 $client = new Client(array(
-    'host' => 'h-srv1.slynett.com',
-    'port' => '2200'
+    'host' => 'chucknorris.com',
 ));
 
 $points = new PointsCollection();

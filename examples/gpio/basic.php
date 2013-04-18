@@ -17,8 +17,7 @@ use Sly\RPIManager\IO\GPIO\Model\Pin;
  * Authentication has to be made from allowed SSH keys.
  */
 $client = new Client(array(
-    'host' => 'h-srv1.slynett.com',
-    'port' => '2200'
+    'host' => 'chucknorris.com',
 ));
 
 $manager = new Manager($client);
